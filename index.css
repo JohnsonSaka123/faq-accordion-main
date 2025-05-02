@@ -64,6 +64,10 @@ body{
   font-weight: 600;
   font-size: 15px;
 }
+.question h3:hover{
+  color: #E33BFF;
+  cursor: pointer;
+}
 .minus-logo{
   display: none;
   max-width: 100%;
