@@ -1,0 +1,110 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+  font-family: "Work Sans",
+    sans-serif;
+  background-color: hsl(275, 100%, 97%);
+}
+.top-background{
+  height: 230px;
+  background-image: url("./assets/images/background-pattern-desktop.svg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+}
+.container{
+  position: absolute;
+  background-color: hsl(0, 100%, 100%);
+  top: 150px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 90%;
+  max-width: 500px;
+  height: auto;
+  padding: 2rem 1rem 0rem 1rem;
+  border-radius: 0.6rem;
+}
+.header{
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 0.8rem;
+}
+.header-logo img{
+  max-width: 100%;
+  height: auto;
+  width: 30px;
+}
+.header-content{
+  color: hsl(292, 42%, 14%);
+  font-weight: 700;
+}
+.question-box{
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid hsl(275, 100%, 97%);
+}
+.question-box:first-child{
+  padding-top: 0;
+}
+.question-box:last-child{
+  border-bottom: none;
+}
+.question{
+  display: flex;
+  align-items: center;
+  color: hsl(292, 42%, 14%);
+  justify-content: space-between;
+}
+.question h3{
+  font-weight: 600;
+  font-size: 15px;
+}
+.minus-logo{
+  display: none;
+  max-width: 100%;
+  height: auto;
+  cursor: pointer;
+  align-self: center;
+}
+.plus-logo{
+  display: block;
+  max-width: 100%;
+  height: auto;
+  cursor: pointer;
+}
+.answer{
+  display: none;
+  color: hsl(292, 16%, 49%);
+  font-weight: 400;
+  line-height: 1.5;
+  font-size: 13px;
+}
+@media(max-width : 400px){
+  .top-background{
+    background-image: url("./assets/images/background-pattern-mobile.svg");
+  }
+  .container{
+    max-width: 340px;
+    width: 100%;
+    padding-left: 1.2rem;
+    padding-right: 1.2rem;
+  }
+  .header{
+    margin-bottom: 1rem;
+  }
+  .question-box:last-child{
+    padding-bottom: 1.3rem;
+  }
+  .question h3{
+    font-size: 16px;
+  }
+  .answer{
+    font-size: 14px;
+    padding-top: 0.4rem;
+  }
+}
